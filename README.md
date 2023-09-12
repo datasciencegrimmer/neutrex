@@ -1,17 +1,19 @@
 
-<!-- # EMOCA -->
-<h1 align="center">EMOCA: Emotion Driven Monocular Face Capture and Animation</h1>
+<!-- # NeutrEx -->
+<h1 align="center"> NeutrEx: A 3D Quality Component Measure on Facial Expression Neutrality</h1>
 <p align="center">
 
   <p align="center">
-    <a href="https://ps.is.tuebingen.mpg.de/person/rdanecek"><strong>Radek Daněček</strong></a>    
+    <a href="https://www.ntnu.no/ansatte/marceg"><strong>Marcel Grimmer</strong></a>    
     ·
-    <a href="https://ps.is.tuebingen.mpg.de/person/black"><strong>Michael J. Black</strong></a>
+    <a href="https://dasec.h-da.de/staff/christian-rathgeb/"><strong>Christian Rathgeb</strong></a>
     ·
-    <a href="https://sites.google.com/site/bolkartt"><strong>Timo Bolkart</strong></a>
+    <a href="https://people.utwente.nl/r.n.j.veldhuis"><strong>Raymond Veldhuis</strong></a>
+    ·
+    <a href="https://www.ntnu.edu/employees/christoph.busch"><strong>Christoph Busch</strong></a>
 
   </p>
-  <h2 align="center">CVPR 2022</h2>
+  <h2 align="center">IJCB 2023</h2>
   <div align="center">
   </div>
 
