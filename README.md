@@ -25,7 +25,7 @@ This repository contains the official implementation of the [IJCB 2023](https://
 
 
 <p align="center"> 
-<img src="classwise_neutrex_vals.JPG">
+<img src="classwise-neutrex-vals.JPG">
 </p>
 <p align="center">Top row: input images. Middle row: coarse shape reconstruction. Bottom row: reconstruction with detailed displacements.<p align="center">
 
