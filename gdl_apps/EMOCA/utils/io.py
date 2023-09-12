@@ -82,6 +82,18 @@ def test(deca, img):
     vals, visdict = decode(deca, vals, training=False)
     return vals, visdict
 
+def generic_shape_test(deca, img):
+    img["image"] = img["image"].cuda()
+    if len(img["image"].shape) == 3:
+        img["image"] = img["image"].view(1,3,224,224)
+    vals = deca.encode(img, training=False)
+    vals['posecode'][0,:3] = 0
+    vals['shapecode'][[0]] = 0
+    vals['lightcode'][[0]] = 0
+    vals['cam'][0,0] = vals['cam'][0,0] * 0.75
+    vals, visdict = decode(deca, vals, training=False, neut = neut)
+    return vals, visdict
+
 
 def decode(emoca, values, training=False):
     with torch.no_grad():
