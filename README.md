@@ -21,7 +21,7 @@
     <img src="./assets/teaser.jpeg" alt="Logo" width="100%">
   </a> -->
 
-This repository is the official implementation of the [CVPR 2022](https://cvpr2022.thecvf.com/) paper [EMOCA: Emotion-Driven Monocular Face Capture and Animation](https://ps.is.mpg.de/uploads_file/attachment/attachment/686/EMOCA__CVPR22.pdf). 
+This repository contains the official implementation of the [IJCB 2023](https://ijcb2023.ieee-biometrics.org/) paper [NeutrEx: A 3D Quality Component Measure on Facial Expression Neutrality](https://arxiv.org/abs/2308.09963). 
 
 
 
