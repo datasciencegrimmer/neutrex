@@ -28,9 +28,7 @@ This repository contains the official implementation of the [IJCB 2023](https://
 <img src="classwise-neutrex-vals.JPG">
 </p>
 
-
-EMOCA takes a single in-the-wild image as input and reconstructs a 3D face with sufficient facial expression detail to convey the emotional state of the input image. EMOCA advances the state-of-the-art monocular face reconstruction in-the-wild, putting emphasis on accurate capture of emotional content. The official project page is [here](https://emoca.is.tue.mpg.de/index.html).
-
+Given a 2D face image, our NeutrEx values quantify the deviation from expression neutrality in the range of [0, 100] following the specifications for component quality measures defined by ISO/IEC CD2 29794-5.
 
 ## Installation 
 
