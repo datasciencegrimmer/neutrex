@@ -34,19 +34,16 @@ EMOCA takes a single in-the-wild image as input and reconstructs a 3D face with 
 
 ## Installation 
 
-Please follow the setup instructions of [EMOCA](https://github.com/radekd91/emoca) to create a conda environment ("work38"), download pre-trained models, and pull additional dependencies.     
+Please follow the setup instructions of [EMOCA v2](https://github.com/radekd91/emoca) to create a conda environment ("work38"), download pre-trained models, and pull additional dependencies.     
 
 
 ## Usage 
 
-0) Activate the environment: 
+Compute NeutrEx component quality values with the following script: 
 ```bash
-conda activate work38_cu11
+python compute_neutrex_val.py --indir "/path/to/imageFolder" --anchor_dir "/path/to/neutral/anchor/multipie-neutral-ref-verts.npy"
 ```
-
-1) For running EMOCA examples, go to [EMOCA](gdl_apps/EMOCA) 
-
-2) For running examples of Emotion Recognition, go to [EmotionRecognition](gdl_apps/EmotionRecognition)
+According to our experiments, we provide two neutral anchors derived from two different datasets ("multipie-neutral-ref-verts.npy" and "feafa+-neutral-ref-verts.npy"). Running the above script will iterate over all images within the input folder, compute the NeutrEx values in correspondence to ISO/IEC CD2 29794-5, and store them in a CSV-file in the input folder directory.
 
 ## Citation 
 
@@ -60,6 +57,7 @@ If you use this work in your publication, please cite the following publications
   year = {2023}
 }
 ```
+As our NeutrEx values are computed based on [EMOCA](https://github.com/radekd91/emoca) and [DECA](https://github.com/YadiraF/DECA), please further cite:
 ```
 @inproceedings{EMOCA:CVPR:2021,
   title = {{EMOCA}: {E}motion Driven Monocular Face Capture and Animation},
@@ -69,7 +67,6 @@ If you use this work in your publication, please cite the following publications
   year = {2022}
 }
 ```
-As EMOCA builds on top of [DECA](https://github.com/YadiraF/DECA) and uses parts of DECA as fixed part of the model, please further cite:
 ```
 @article{DECA:Siggraph2021,
   title={Learning an Animatable Detailed {3D} Face Model from In-The-Wild Images},
@@ -81,21 +78,8 @@ As EMOCA builds on top of [DECA](https://github.com/YadiraF/DECA) and uses parts
   url = {https://doi.org/10.1145/3450626.3459936} 
 }
 ```
-Furthermore, if you use EMOCA v2, please also cite [SPECTRE](https://filby89.github.io/spectre/): 
-```
-@article{filntisis2022visual,
-  title = {Visual Speech-Aware Perceptual 3D Facial Expression Reconstruction from Videos},
-  author = {Filntisis, Panagiotis P. and Retsinas, George and Paraperas-Papantoniou, Foivos and Katsamanis, Athanasios and Roussos, Anastasios and Maragos, Petros},
-  journal = {arXiv preprint arXiv:2207.11094},
-  publisher = {arXiv},
-  year = {2022},
-}
-```
-
 ## License
 This code and model are **available for non-commercial scientific research purposes** as defined in the [LICENSE](https://emoca.is.tue.mpg.de/license.html) file. By downloading and using the code and model you agree to the terms of this license. 
 
-## Acknowledgements 
-There are many people who deserve to get credited. These include but are not limited to: 
-Yao Feng and Haiwen Feng and their original implementation of [DECA](https://github.com/YadiraF/DECA).
-Antoine Toisoul and colleagues for [EmoNet](https://github.com/face-analysis/emonet).
+## Acknowledgements  
+To the authors of [DECA](https://github.com/YadiraF/DECA) and [EMOCA](https://github.com/radekd91/emoca), who made this work possible with their outstanding contributions.
