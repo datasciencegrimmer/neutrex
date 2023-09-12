@@ -24,19 +24,8 @@
 This repository contains the official implementation of the [IJCB 2023](https://ijcb2023.ieee-biometrics.org/) paper [NeutrEx: A 3D Quality Component Measure on Facial Expression Neutrality](https://arxiv.org/abs/2308.09963). 
 
 
-
-  <!-- 
 <p align="center"> 
-<img src="gdl_apps/EMOCA/EMOCA_gif_sparse_det.gif">
-<img src="gdl_apps/EMOCA/EMOCA_gif_sparse_rec.gif">
-</p>
--->
-<p align="center"> 
-<img src="gdl_apps/EMOCA/EMOCA_gif_sparse_det_rec.gif">
-</p>
-
-<p align="center"> 
-<img src="gdl_apps/EMOCA/emoca.png">
+<img src="classwise_neutrex_vals.JPG">
 </p>
 <p align="center">Top row: input images. Middle row: coarse shape reconstruction. Bottom row: reconstruction with detailed displacements.<p align="center">
 
